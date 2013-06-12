@@ -1,0 +1,30 @@
+{
+  "name": "page-reflex",
+  "version": "0.1.0",
+  "description": "An event page scrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vincent/node-jamendo.git"
+  },
+  "keywords": [
+    "jamendo"
+  ],
+  "author": "Vincent Lark vincent.lark@gmail.com",
+  "license": "BSD",
+  "dependencies": {
+    "request": "~2.20.0",
+    "cheerio": "~0.12.0"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "grunt": ">= 0.4.0",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-shell": "~0.2.2"
+  },
+  "readmeFilename": "Readme.md",
+  "gitHead": "abe2a2e6a09763bd95d627bd2ade8a50a3ecb7df"
+}
