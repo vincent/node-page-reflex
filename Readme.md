@@ -7,6 +7,8 @@ $ npm install page-reflex
 
 # Use
 ```javascript
+var PageReflex = require('page-reflex');
+
 var reflex = new PageReflex('https://npmjs.org');
 
 reflex.on('#index p:contains(Total Packages)', function(updated_content){
