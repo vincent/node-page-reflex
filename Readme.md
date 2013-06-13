@@ -22,7 +22,7 @@ $ grunt
 ```
 
 # Documentation
-API documentation is built by ```grunt``` and stored in the ```public/docs``` directory
+[API documentation](http://htmlpreview.github.io/?https://raw.github.com/vincent/node-page-reflex/master/public/docs/index.js.html) is built by ```grunt``` and stored in the ```public/docs``` directory.
 
 # License
 BSD
