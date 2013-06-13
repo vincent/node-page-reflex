@@ -7,12 +7,10 @@ $ npm install page-reflex
 
 # Use
 ```javascript
-var reflex = new PageReflex('http://fr.yahoo.com', {
-  every: 5000
-});
+var reflex = new PageReflex('https://npmjs.org');
 
-reflex.on('.markets.clearfix.strong.small', function(new_stocks){
-  console.log('new markets numbers', new_stocks);
+reflex.on('#index p:contains(Total Packages)', function(updated_content){
+  console.log('Now', updated_content);
 });
 ```
 
