@@ -97,7 +97,7 @@
               </tr>
             </tbody>
           </table>
-          <div class="description"><p>Page reflexion class<br />Use it with<br />var client = new PageReflex(url)<br /> &nbsp;                          .on('body #content', function(updated_content){<br /> &nbsp;                          // do stuff with updated_content<br /> &nbsp;                      })</p> 
+          <div class="description"><p>Page reflexion class<br />Use it with<br />var reflex = new PageReflex(url)<br />reflex.on('body #content', function(updated_content){<br />&nbsp;&nbsp;    // do stuff with updated_content<br />})</p> 
             <pre><code class="language-javascript">var PageReflex = function(url, settings) {
   EventEmitter.call(this, settings);
   var self = this;

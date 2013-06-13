@@ -6,10 +6,10 @@ var util = require('util');
 /**
 * Page reflexion class
 * Use it with
-* var client = new PageReflex(url)
-*  &nbsp;                          .on('body #content', function(updated_content){
-*  &nbsp;                          // do stuff with updated_content
-*  &nbsp;                      })
+* var reflex = new PageReflex(url)
+* reflex.on('body #content', function(updated_content){
+* &nbsp;&nbsp;    // do stuff with updated_content
+* })
 *
 * @param {String} url The URL to scrape for change
 * @return object An instanciated PageReflex class
