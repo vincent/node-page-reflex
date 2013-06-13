@@ -1,14 +1,14 @@
 {
   "name": "page-reflex",
   "version": "0.1.0",
-  "description": "An event page scrapper",
+  "description": "An evented page scrapper",
   "main": "index.js",
   "scripts": {
     "test": "node tests.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vincent/node-jamendo.git"
+    "url": "git@github.com:vincent/node-page-reflex.git"
   },
   "keywords": [
     "jamendo"

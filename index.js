@@ -27,7 +27,7 @@ var PageReflex = function(url, settings) {
 
   this.settings = settings || {};
   this.settings.retry = this.settings.retry || false;
-  this.settings.every = this.settings.every || (30 * 1000);
+  this.settings.every = (this.settings.every || 30) * 1000;
   this.settings.rejectUnauthorized = this.settings.rejectUnauthorized || true;
 
   // our changes expressions
@@ -35,7 +35,7 @@ var PageReflex = function(url, settings) {
   this.on('newListener', function(event, listener){
     self.paths[event] = self.paths[event] || {
       last_modified: null,
-      data: {}
+      data: ''
     };
   });
 
@@ -87,8 +87,8 @@ PageReflex.prototype.extract = function(body) {
     parsedHTML(selector).each(function(i, element) {
       var elementHtml = $(element).html();
 
-      if (self.paths[selector].data[i] !== elementHtml) {
-        self.paths[selector].data[i] = elementHtml;
+      if (self.paths[selector].data !== elementHtml) {
+        self.paths[selector].data = elementHtml;
         self.paths[selector].last_modified = now;
         self.emit(selector, elementHtml, $, element, body);
 
