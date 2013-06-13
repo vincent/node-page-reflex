@@ -1,4 +1,4 @@
-# An event xml/html scrapper
+# An evented xml/html scrapper
 
 # Install
 ```bash
