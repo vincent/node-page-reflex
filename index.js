@@ -7,9 +7,9 @@ var util = require('util');
 * Page reflexion class
 * Use it with
 * var client = new PageReflex(url)
-*                                   .on('body #content', function(updated_content){
-*                                       // do stuff with updated_content
-*                                   })
+*  &nbsp;                          .on('body #content', function(updated_content){
+*  &nbsp;                          // do stuff with updated_content
+*  &nbsp;                      })
 *
 * @param {String} url The URL to scrape for change
 * @return object An instanciated PageReflex class
